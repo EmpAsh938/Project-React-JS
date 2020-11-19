@@ -1,0 +1,49 @@
+img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.person {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 25px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+
+
+
+.name {
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.age {
+    line-height: 2rem;
+    font-weight: 400;
+    color: #617d98;
+}
+
+@media screen and (max-width: 990px) {
+    .name, .age {
+        font-size: small;
+    }
+}
+
+@media screen and (max-width: 744px){
+    .name, .age {
+        font-size: smaller;
+    }
+    img {
+        width: 40px;
+        height: 40px;
+    }
+}

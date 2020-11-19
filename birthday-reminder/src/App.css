@@ -1,0 +1,56 @@
+.main {
+    background: white;
+    /* border: 1px solid rgb(241, 224, 224); */
+    width: 30vw;
+    margin: 80px auto;
+    box-shadow: 0 5px 15px rgb(177, 173, 173);
+    border-radius: .7rem;
+    padding: 5px;
+}
+
+h1 {
+    text-align: left;
+    color: rgb(48, 41, 41);
+    margin-left: 25px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+button {
+    display: block;
+    letter-spacing: 3px;
+    border: pink;
+    border-color: transparent;
+    border-radius: 4px;
+    text-align: center;
+    color: rgb(233, 218, 218);
+    /* height: 10vh; */
+    width: 100%;
+    background: rgb(221, 89, 193);
+    /* padding: 4px; */
+    margin: 6px;
+    font-size: 18px;
+    outline: 1px solid rgb(216, 97, 162);
+    position: relative;
+    right: 5px;
+    cursor: pointer;
+    line-height: 1.5rem;
+}
+
+
+@media screen and  (max-width: 1064px) {
+    h1 {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and  (max-width: 990px) {
+    h1{ 
+        letter-spacing: 1px;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+    button {
+        font-size: smaller;
+    }
+}
