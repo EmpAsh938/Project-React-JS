@@ -1,0 +1,186 @@
+.App {
+    text-align: center;
+    height: 50vh;
+    width: 50vw;
+    margin: auto;
+    margin-top: 5em;
+    /* border: 1px solid brown; */
+}
+
+.header {
+    color: rgb(21, 28, 34);
+    letter-spacing: 1px;
+    padding: .4em .2em;
+    margin-bottom: .7em;
+    /* border: 1px solid springgreen; */
+}
+
+.main-container {
+    width: 70%;
+    margin: auto;
+    padding: .6em;
+    box-shadow: 0 5px 15px rgba(0,0,0,.4);
+}
+
+.form-container {
+    width: 100%;
+    /* border: 1px solid slateblue; */
+    /* margin: .4em 0; */
+}
+
+.msg {
+    /* border: 1px solid green; */
+    letter-spacing: 1px;
+    margin: auto;
+    margin-top: .6em;
+    font-size: .8rem;
+    font-weight: 500;
+    width: 70%;
+    color: #fff;
+    transition: all .3s ease;
+}
+.danger {
+    background: rgb(228, 156, 156);
+}
+
+.active {
+    background: rgb(119, 243, 119);
+}
+
+.form-container input {
+    width: 50%;
+    border: none;
+    font-size: .9rem;
+    color: #222;
+    letter-spacing: 1px;
+    background: rgba(0,0,0,.2);
+    border-radius: 4px;
+    padding: .4em .2em;
+    margin-right: .4em;
+
+}
+.strike {
+    text-decoration: line-through;
+}
+.btn {
+    border: none;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    background: rgb(114, 186, 228);
+    border-radius: 4px;
+    padding: .3em .8em;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.btn:hover {
+    color: #fff;
+    background: rgb(22, 168, 236);
+}
+
+.list-container {
+    border: 1px solid rgb(214, 214, 214);
+    margin: .5em auto;
+    padding: .3em;
+    width: 90%;
+    border-radius: 4px;
+} 
+
+.list-items {
+    margin: .5em 0;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    /* border: 1px solid blue; */
+    column-gap: .5rem;
+}
+
+
+.text {
+    /* border: 1px solid salmon; */
+    padding: .2em .6em;
+}
+.btn-container {
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edit-btn, .remove-btn {
+    background: transparent;
+    padding: .2em .4em;
+    font-size: .8rem;
+}
+
+.edit-btn {
+    color: rgb(10, 134, 10);
+}
+
+.edit-btn:hover {
+    background-color: rgb(30, 197, 30);
+}
+
+.remove-btn {
+    color: rgb(134, 4, 4);
+}
+
+.remove-btn:hover {
+    background: rgb(204, 34, 34);
+}
+
+.clear-btn {
+    background: rgb(238, 58, 58);
+    color: white;
+    margin: .7em;
+}
+.clear-btn:hover {
+    background: rgb(211, 34, 10);
+}
+
+.editBtn {
+    color: #fff;
+    background: rgb(39, 148, 39);
+}
+.editBtn:hover {
+    background: rgb(2, 197, 2);
+}
+
+
+
+@media screen and (max-width: 908px) {
+    .App {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 758px) {
+    .App {
+        width: 70vw;
+    }
+}
+@media screen and (max-width: 648px) {
+    .App {
+        width: 80vw;
+    }
+}
+@media screen and (max-width: 570px) {
+    .App {
+        width: 90vw;
+    }
+}
+@media screen and (max-width: 504px) {
+    .App {
+        width: 100vw;
+    }
+    .list-container {
+        /* border: 1px solid rgb(214, 214, 214); */
+        /* margin: .5em auto; */
+        padding: .1em;
+        width: 100%;
+    }
+    .btn-container {
+        flex-direction: column;
+        justify-content: center;
+        
+    } 
+}
