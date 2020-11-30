@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  font-size: 13px;
+  color: rgb(16, 27, 34);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.App {
+  height: 90vh;
+  display: grid;
+  place-items: center;
+
+}
+.App-container {
+  min-height: 50vh;
+  text-align: center;
+  /* border: 1px solid salmon; */
+  /* width: 30vw; */
+  margin: auto;
+  background: salmon;
+  border-radius: 5px;
+  padding: 1em .7em;
+}
+
+form {
+  padding: .3em;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  background: #fbc1bb;
+  color: #ec645b;
+  align-items: center;
+  border-radius: 5px;
+}
+
+form input {
+  border: none;
+  padding: .2em .6em;
+  background: transparent;
+  letter-spacing: 1px;
+  color: #5a2e2b;
+}
+
+input::placeholder {
+  letter-spacing: 1px;
+  color: #5a2e2b;
+}
+
+
+form svg {
+  margin-right: .4em;
+}
+
+.items-container {
+  /* height: 10vh; */
+  padding: .4em;
+  margin: .4em 0;
+}
+
+.items-list {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: .5em;
+  border-bottom: 2px solid rgb(206, 201, 201);
+}
+
+.check {
+  /* border: none;
+  border-radius: 50%;
+  background: #fbc1bb; */
+}
+.check svg {
+  padding: .2em .3em;
+  color: #eee9e8;
+  font-size: 1.5rem;
+}
+
+.btn-container {
+  background: rgb(209, 208, 208);
+  padding: .3em .7em;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  color: #ec645b;
+}
+
+.text {
+  /* border: 1px solid black; */
+  color: #e4dbda;
+  font-size: .98rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+.btn-container svg {
+  padding: 0 .3em;
+  cursor: pointer;
+  font-weight: 100;
+}
+
+.total-items {
+  /* border: 1px solid green; */
+  text-align: end;
+}
+
+
+.total-items p {
+  color: #f7efef;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-right: .3em;
+}
