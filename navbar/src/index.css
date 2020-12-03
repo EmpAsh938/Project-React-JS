@@ -1,0 +1,141 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  color: rgb(10, 31, 54);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+button {
+  display: inline-block;
+  background: transparent;
+  border: none;
+  color: rgb(12, 146, 199);
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  column-gap: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(10, 31, 54);
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.App {
+  min-height: 100vh;
+  /* background: brown; */
+  overflow-x: hidden;
+}
+
+.app-nav {
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+  /* background: rgb(154, 188, 189); */
+  padding: .5em 1em;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+.app-logo {
+  /* background: rebeccapurple; */
+  font-size: 5rem;
+  /* padding: .1em .5em; */
+  color: rgb(12, 146, 199);
+}
+
+.app-bars {
+  display: none;
+}
+
+.app-links {
+  justify-self: center;
+  font-size: 1.2rem;
+}
+
+.app-social {
+  margin-right: 1em;
+
+}
+
+.app-menu {
+  opacity: 0;
+  background: #fff;
+  height: 0;
+  width: 100%;
+  /* position: absolute; */
+  /* top: 20%; */
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 1rem;
+  font-size: 1.2rem;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+  /* border: 1px solid saddlebrown; */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+}
+
+.menu-list {
+  margin-left: 1em;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 1rem;
+}
+
+@media screen and (max-width: 1100px) {
+  ul {
+    font-size: 1.1rem;
+  }
+  .app-nav {
+    column-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 980px){
+  ul {
+    display: none;
+
+  }
+  
+  .app-logo {
+    min-width: 100vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
+  .app-bars {
+    /* background: royalblue; */
+    display: inline-block;
+    font-size: 3rem;
+    justify-self: right;
+    margin-right: 1em;
+  
+  }
+  .app-menu {
+    /* height: 0; */
+    opacity: 1;
+  }
+}
