@@ -1,0 +1,295 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+main {
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+/* Modal */
+
+.modal {
+  height: 100vh;
+  /* background: coral; */
+  display: grid;
+  place-items: center;
+}
+
+.modal-box {
+  /* border: solid green; */
+  height: 70vh;
+  width: 30vw;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: .5em;
+  row-gap: 1em;
+}
+
+.header {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: rgb(22, 31, 51);
+  text-transform: capitalize;
+}
+
+.modal-form {
+  /* border: solid seagreen; */
+  /* margin-top: 1em; */
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  /* row-gap: 1em; */
+  align-items: center;
+}
+
+.form-input {
+  /* border: solid saddlebrown; */
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0;
+  align-self: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+label {
+  color: rgb(44, 59, 92);
+  text-transform: capitalize;
+  margin-bottom: .3em;
+}
+
+
+.form-input input, select {
+  border: none;
+  font-size: 1rem;
+  background: #f1f5f8;
+  padding: .2em;
+}
+
+
+.modal-btn {
+  text-align: center;
+}
+
+.error {
+  color: rgb(158, 7, 7);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  padding: .5em 0;
+  text-transform: capitalize;
+}
+
+.btn {
+  border: none;
+  font-weight: bold;
+  letter-spacing: 3px;
+  width: 90%;
+  cursor: pointer;
+  padding: .7em 0;
+  border-radius: 7px;
+  transition: all .3s linear;
+  text-transform: capitalize;
+}
+
+.btn-next {
+  background: rgb(221, 201, 22);
+
+}
+
+.btn-next:hover {
+  background: rgb(179, 163, 20);
+  color: rgb(185, 179, 179);
+}
+
+
+/* Loader */
+
+
+.section-loader {
+  visibility: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  background: #fff;
+}
+
+
+.loader {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  border: solid rgba(0, 0, 0, .4);
+  border-left: solid rgb(96, 181, 221);
+  animation: rotate .5s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.show-loader {
+ visibility: visible;
+}
+
+
+
+/* Questions */
+
+.question-cont {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  background: #fff;
+}
+
+.question {
+  background: #fff;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  height: 80%;
+  width: 80%;
+  /* border: solid saddlebrown; */
+  display: grid;
+  grid-template-rows: auto 1fr;
+  row-gap: 1rem;
+  padding: 1em;
+  z-index: 100;
+}
+
+/* .show-question {
+  display: block;
+} */
+
+.check-answer {
+  color: rgb(8, 172, 8);
+  text-align: right;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+.question-box {
+  /* background: rosybrown; */
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  /* justify-content: space-between; */
+  text-align: center;
+}
+
+.question-header {
+  padding: .4em;
+}
+
+.question-btn {
+  justify-self: center;
+  align-self: center;
+  width: 50%;
+}
+
+.btn-options {
+  background: rgb(154, 204, 216);
+  margin: .7em 0;
+  text-transform: capitalize;
+}
+.btn-options:hover {
+  background: rgb(65, 160, 204);
+  color: #fff;
+}
+
+.btn-question {
+  text-align: center;
+  width: 45%;
+  background: rgb(192, 176, 32);
+  font-weight: bolder;
+  justify-self: right;
+}
+
+
+/* final */
+
+.final {
+  /* visibility: hidden; */
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  background: rgba(0, 0, 0, .8);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+}
+
+.show-final {
+  /* visibility: visible; */
+}
+
+.final-box {
+  background: #fff;
+  padding: 2em 4em;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.final-box h2 {
+  font-size: 3rem;
+  padding: .3em;
+  text-transform: capitalize;
+  color: rgb(22, 31, 51);
+}
+
+.final-header {
+  color: rgb(44, 59, 92);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.btn-replay {
+  background: rgb(206, 187, 17);
+  width: 50%;
+  margin-top: 1em;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .modal-box {
+    width: 50vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .modal-box {
+    width: 65vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .modal-box {
+    width: 85vw;
+  }
+}
