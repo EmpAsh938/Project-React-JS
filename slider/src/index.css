@@ -1,0 +1,145 @@
+:root {
+  --clr-primary-1: hsl(209, 61%, 16%);
+  --clr-primary-2: hsl(210, 28%, 39%);
+  --clr-primary-3: hsl(209, 29%, 60%);
+  --clr-primary-4: #a76e18;
+  --clr-white: #fff;
+  --default-transition: all 0.3s linear;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+}
+
+main {
+  min-height: 90vh;
+  min-width: 90vw;
+}
+
+section {
+  position: relative;
+  width: 80%;
+  margin: 2em auto;
+}
+
+/* Header Title  */
+
+.header {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--clr-primary-1);
+}
+
+.line {
+  color: var(--clr-primary-4);
+}
+
+/* Button Next and Preview  */
+
+.btn-wrapper {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  border: none;
+  padding: 0.2em 0.5em;
+  border-radius: 0.2em;
+  color: var(--clr-white);
+  background-color: var(--clr-primary-2);
+  cursor: pointer;
+}
+
+/* Slide Content  */
+
+.slide-wrapper {
+  position: relative;
+  height: 450px;
+  margin-top: 2em;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  text-align: center;
+  padding: 2em 0;
+  transition: var(--default-transition);
+  /* opacity: 0; */
+  /* transform: translateX(100%); */
+}
+
+.active {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.next {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.last {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid var(--clr-primary-3);
+  object-fit: cover;
+}
+
+.name {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  color: var(--clr-primary-1);
+  font-weight: 500;
+  margin-top: 1em;
+}
+
+.job {
+  text-transform: uppercase;
+  color: var(--clr-primary-1);
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.info {
+  color: var(--clr-primary-2);
+  margin: 2em 0;
+}
+
+svg {
+  font-size: 3rem;
+  color: var(--clr-primary-4);
+}
+
+@media screen and (min-width: 600px) {
+  section {
+    width: 450px;
+  }
+}
