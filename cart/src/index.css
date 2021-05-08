@@ -158,6 +158,7 @@ img {
   cursor: pointer;
   border: none;
   font-size: 1.1rem;
+  background: var(--clr-white);
   transition: var(--def-transition);
 }
 
