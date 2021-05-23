@@ -8,7 +8,12 @@
 # testing
 /coverage
 
+<<<<<<< HEAD
 build
+=======
+# production
+/build
+>>>>>>> f364450 (updated projects)
 
 # misc
 .DS_Store

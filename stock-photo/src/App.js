@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
 import { FaSearch } from "react-icons/fa";
 import Photos from "./Photos";
@@ -88,4 +89,19 @@ function App() {
   );
 }
 
+=======
+import Header from "./Header";
+import Stock from "./Stock";
+
+const App = () => {
+  return (
+    <main>
+      <section>
+        <Header />
+        <Stock />
+      </section>
+    </main>
+  );
+};
+>>>>>>> f364450 (updated projects)
 export default App;

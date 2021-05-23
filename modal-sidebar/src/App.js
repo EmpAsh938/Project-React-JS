@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from "react";
 import { FaBars, FaTimes, FaHtml5 } from "react-icons/fa";
 import { links, social } from './data'
@@ -69,6 +70,19 @@ function App() {
         </ul>
       </div>
     </>
+=======
+import Title from "./Title";
+import Hero from "./Hero";
+
+function App() {
+  return (
+    <main>
+      <section>
+        <Title />
+        <Hero />
+      </section>
+    </main>
+>>>>>>> f364450 (updated projects)
   );
 }
 

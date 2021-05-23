@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "todo-app",
   "version": "0.1.0",
   "private": true,
@@ -10,6 +11,19 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3"
+=======
+  "name": "birthday-reminder",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^12.8.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.1"
+>>>>>>> f364450 (updated projects)
   },
   "scripts": {
     "start": "react-scripts start",
@@ -18,7 +32,14 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
+<<<<<<< HEAD
     "extends": "react-app"
+=======
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+>>>>>>> f364450 (updated projects)
   },
   "browserslist": {
     "production": [

@@ -158,7 +158,10 @@ img {
   cursor: pointer;
   border: none;
   font-size: 1.1rem;
+<<<<<<< HEAD
   background: var(--clr-white);
+=======
+>>>>>>> f364450 (updated projects)
   transition: var(--def-transition);
 }
 

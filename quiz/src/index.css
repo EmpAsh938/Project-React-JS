@@ -1,26 +1,45 @@
 *,
+<<<<<<< HEAD
 ::after,
 ::before {
+=======
+::before,
+::after {
+>>>>>>> f364450 (updated projects)
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
+<<<<<<< HEAD
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+=======
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+>>>>>>> f364450 (updated projects)
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
+<<<<<<< HEAD
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+=======
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+>>>>>>> f364450 (updated projects)
     monospace;
 }
 
 main {
   height: 100vh;
+<<<<<<< HEAD
   overflow: hidden;
 }
 
@@ -293,3 +312,8 @@ label {
     width: 85vw;
   }
 }
+=======
+  width: 100vw;
+  position: relative;
+}
+>>>>>>> f364450 (updated projects)

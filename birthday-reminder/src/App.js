@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import './App.css';
 import Info from './Info'
@@ -57,3 +58,27 @@ function App() {
 export default App;
 
 
+=======
+import { useState } from "react";
+import People from "./People";
+import { data } from "./data";
+
+function App() {
+  const [newData, setNewData] = useState(data);
+  return (
+    <main>
+      <section>
+        <h3> {newData.length} birthdays today</h3>
+        <div className="people-container">
+          {newData.map((item) => {
+            return <People key={item.id} {...item} />;
+          })}
+          <button onClick={() => setNewData([])}>Clear All</button>
+        </div>
+      </section>
+    </main>
+  );
+}
+
+export default App;
+>>>>>>> f364450 (updated projects)

@@ -1,0 +1,47 @@
+.result {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: grid;
+  place-items: center;
+  z-index: 20;
+}
+
+.result__wrapper {
+  background: yellow;
+  height: 50%;
+  max-width: 500px;
+  width: 90%;
+  padding: 0.5em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  gap: 1em;
+}
+
+.result__wrapper > p {
+  letter-spacing: 0.07em;
+  font-weight: 500;
+  color: rgb(42, 107, 204);
+}
+
+.result__wrapper > h2 {
+  font-size: 2.2rem;
+  color: #031f31;
+}
+
+.result__wrapper > button {
+  border: none;
+  font-size: 1rem;
+  padding: 0.3em 0.8em;
+  border-radius: 5px;
+  font-weight: 600;
+  background: rgb(50, 182, 205);
+  color: #fff;
+  cursor: pointer;
+}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import './App.css';
 import Rev from './Rev'
@@ -17,6 +18,17 @@ function App() {
       })}
       </div>
     </div>
+=======
+import Title from "./Title";
+import Content from "./Content";
+
+function App() {
+  return (
+    <section>
+      <Title />
+      <Content />
+    </section>
+>>>>>>> f364450 (updated projects)
   );
 }
 
