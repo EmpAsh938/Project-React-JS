@@ -25,8 +25,6 @@ const List = () => {
               idDrink,
               strDrink,
               strCategory,
-              strAlcoholic,
-              strGlass,
               strDrinkThumb,
             } = item;
             return (
