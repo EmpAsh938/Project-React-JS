@@ -36,6 +36,7 @@ const AppProvider = ({ children }) => {
     if (text) {
       fetchRequest(page, text);
     }
+    // eslint-disable-next-line
   }, [page, text]);
 
   useEffect(() => {
